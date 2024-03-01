@@ -4,7 +4,7 @@
 TAR_FILE=$1
 
 # Repo URL'si
-REPO_URL="saganak-nexus-tls.scope.kkuhtm.aynet.com.tr"
+REPO_URL="nexus-repo-address"
 today=$(date +%Y%m%d)
 
 # Eğer TAR_FILE argümanı verilmemişse, hata mesajı göster ve çık
