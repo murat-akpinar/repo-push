@@ -1,20 +1,17 @@
 #!/bin/bash
 
-# Kullanıcıdan alınan tar dosyasının adı
 TAR_FILE=$1
 
 # Repo URL'si
 REPO_URL="nexus-repo-address"
 today=$(date +%Y%m%d)
 
-# Eğer TAR_FILE argümanı verilmemişse, hata mesajı göster ve çık
 if [ -z "$TAR_FILE" ]; then
     echo "Lütfen bir tar dosyası adı girin."
     echo "Kullanım: $0 <dosya.tar>"
     exit 1
 fi
 
-# Docker imajını yükle ve imaj adını al
 output=$(docker load -i "$TAR_FILE")
 loaded_image=$(echo $output | grep -oP '(?<=Loaded image: )[^ ]+')
 
