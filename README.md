@@ -8,6 +8,4 @@ Betik aşağıdaki formatta komut satırı üzerinden çalıştırılmalıdır:
 
 ```bash
 ./betik_adi.sh <dosya.tar>
-
-
-
+```
